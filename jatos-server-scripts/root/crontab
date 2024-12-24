@@ -1,0 +1,4 @@
+10 23 * * *     sh /root/mysqlbackup.sh
+20 23 * * *    /usr/bin/rsync -av mysqldumps/* /home/bene/mysqldumps/
+25 23 * * *    /bin/chown -R bene.users /home/bene/mysqldumps/
+01 23 * * *    /bin/bash /root/f2bl.sh
